@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShoeStock</title>
+    <link rel="icon" href="img/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body style="position:relative; z-index:-10">
+
+
+    <!-- preloader -->
+    <div id="preloader">
+        <img src="img/logo.png" alt="" id="preloaderimg" class="img-fluid">
+        <h1 id="loadertxt">ShoeStock</h1>
+    </div>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-black navbar-dark "
+        style="color: white !important; box-shadow:0px 0.1px 5px rgba(255, 255, 255, 0.527)" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0 text-center" href="#tru"><img src="img/logo.png" alt="" class="img-fluid"><span
+                    class="d-none d-md-inline" id="logtxt">ShoeStock</span></a>
+            <span class="d-md-none fw-bolder fs-4" id="logtxt">ShoeStock</span>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#hom">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#abo">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#con">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#off">Offers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Brand
+                        </a>
+                        <ul class="dropdown-menu bg-dark " id="navdrop">
+                            <li><a class="dropdown-item text-light " href="#nik">Nike</a></li>
+                            <li><a class="dropdown-item text-light " href="#adi">Adidas</a></li>
+                            <li><a class="dropdown-item text-light " href="#pum">Puma</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search" id="searchform">
+                    <input class="form-control form-control-sm" type="search" id="inpsearch" placeholder="Search" aria-label="Search" onkeyup="searchalgo()" autocomplete="off">
+
+                    <ul id="searchul">
+                       
+                        <a href="#hom"><li>Home</li></a>
+                        <a href="#abo"><li>About Us</li></a>
+                        <a href="#con"><li>Contact Us</li></a>
+                        <a href="#off"><li>Offers</li></a>
+                        <!-- <a href="#hom"><li>Partners</li></a> -->
+                        <a href="#nik"><li>Nike</li></a>
+                        <a href="#adi"><li>Adidas</li></a>
+                        <a href="#pum"><li>Puma</li></a>
+                        <a href="#tnik"><li>Top from Nike</li></a>
+                        <a href="#tadi"><li>Top from Adidas</li></a>
+                        <a href="#tpum"><li>Top from Puma</li></a>
+                        <a href="#tru"><li>Our Stats</li></a>
+                        <a href="#" style="pointer-events:none; display:none"><li>no results found.</li></a>
+                    </ul>
+                </form>
+
+            </div>
+        </div>
+        <br>
+    </nav>
+
+
+    <!-- home section -->
+    <div id="hom" class="scrolldiv"></div>
+    <div class="container-fluid" >
+        <div class="row justify-content-evenly flex-column-reverse flex-md-row" style="background: rgb(207, 207, 207);">
+            <div class="col-md-4 p-md-3 p-4" style="color:black; display:grid; align-items: center;">
+                <div>
+                    <div data-aos="zoom-in" data-aos-delay="1500">
+                    <h1 class="mb-0">ShoeStock<br>
+                        <h5>The Sneakers Stop</h5>
+                    </div>
+                    </h1>
+                    <hr class="mb-3">
+                    <div class="p-2 p-md-0 pt-0"> We provide the best quality original sneakers from the top brands so
+                        that
+                        you
+                        don't have to worry
+                        about
+                        their limited stock. <br><em class="d-block">Walk with style with the premium range
+                            of
+                            our
+                            sneakers.</em></div><br><br>
+                    
+                        
+                        <a href="#con" class="m-0 p-0"><button type="button" class="btn btn-outline-dark mb-md-2 me-md-2 d-inline-block">Contact Us</button></a>
+                        
+                        
+                        
+                            <div class="dropdown d-inline-block ">
+                                
+                                <button class="btn btn-dark mb-md-2 " type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" >
+                                    Collaborations
+                                </button>
+                                <ul class="dropdown-menu bg-dark collab">
+                                    <li><a class="dropdown-item text-white" href="https://www.nike.com/in/"
+                                            target="_blank">Nike<i class="bi bi-box-arrow-up-right ms-3"></i></a></li>
+                                    <li><a class="dropdown-item text-white" href="https://www.adidas.co.in/"
+                                            target="_blank">Adidas<i class="bi bi-box-arrow-up-right ms-3"></i></a></li>
+                                    <li><a class="dropdown-item text-white" href="https://in.puma.com/in/en"
+                                            target="_blank">Puma<i class="bi bi-box-arrow-up-right ms-3"></i></a></li>
+                                </ul>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+            <div class="col-md-4 p-3 text-center">
+                <div id="carouselExampleInterval " class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner " id="homeslide">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="img/w1.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/w2.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/w3.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/w4.png" class="d-block img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/w5.png" class="d-block img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- nike section -->
+    <div id="nik" class="scrolldiv"></div>
+    <div class="container-fluid bg-black text-white" id="nike" style="position:sticky!important; z-index:-1">
+        <div class="row justify-content-evenly flex-column-reverse flex-md-row p-4">
+            <div class="col-md-5 p-4">
+                <div data-aos="zoom-out-up" data-aos-offset="200">
+                <h1 class="d-flex" >Nike <img src="img/nike.png" alt="" class="img-fluid"
+                        style="height:20px; align-self:center; margin-left:15px"></h1>
+                <p>Just Do It</p>
+                </div>
+                <hr>
+                <p class="pe-md-5" style="color:rgb(197, 197, 197)">
+                    GO ALL OUT<br>
+                    Lift. Jump. Pivot. With a mix of flexibility and stability.<br>
+                    This training shoe helps you get the most out of every movement.
+                </p>
+                <a href="https://www.nike.com/in/" target="_blank"><button class="btn btn-dark">Visit Site</button></a>
+            </div>
+            
+            <div class="col-md-4 p-4 videoouter">
+                <div style="position:relative;" data-aos="zoom-in" data-aos-offset="200">
+                    <div class="backdesvidn">
+
+                    </div>
+                    <div class="m-0 p-0 bg-black videobox">
+                        <div class="m-0 p-0 cover"></div>
+                        <i class="bi bi-play-circle-fill playicon" onclick="playvideo('video/nike.mp4',0)"></i>
+                        <img src="img/nlogo.png" alt="" class="w-100 m-0 p-0 pic">
+                        <video autoplay class="w-100 h-100 m-0 p-0 vid"></video>
+                        <i class="bi bi-x-circle close" onclick="closevideo(0)"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Top Picks from nike -->
+    <div id="tnik" class="scrolldiv"></div>
+    <div class="container-fluid " style="background: rgb(207, 207, 207);">
+        <div class=" row justify-content-evenly p-md-5 p-0">
+            <h2 class="col-12 text-center mb-md-5 p-5 p-md-0">
+            Top Picks From Nike</h2>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topn1 col-md-12 col-5" data-aos="slide-up"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Air Jordan 1</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">Black Metallic Gold</h6>
+                        <p class="p-3 text-center d-none d-md-block">The Air Jordan 1 Black Metallic Gold takes inspiration from an Air Jordan 1 Mid from 2003 </p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Air Jordan 1</h1>
+                              <h6 class="m-0 p-0 text-wrap">Black Metallic Gold</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                The Air Jordan 1 Black Metallic Gold takes inspiration from an Air Jordan 1 Mid from 2003
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0 flex-row-reverse">
+                    
+                <div class="top topn2 col-md-12 col-5" data-aos="slide-up"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Air Mag</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">Back to the Future</h6>
+                        <p class="p-3 text-center d-none d-md-block">The Nike Mag Back to the Future was released in 2011 to support Fox Foundation.</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Air Mag</h1>
+                              <h6 class="m-0 p-0 text-wrap">Back to the Future</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                The Nike Mag Back to the Future was released in 2011 to support Fox Foundation.</ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topn3 col-md-12 col-5" data-aos="slide-up"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Air Jordan 6</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">Retro</h6>
+                        <p class="p-3 text-center d-none d-md-block">MJ's sixth signature shoe debuted during the 1990–1991 season at a championship</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Air Jordan 6</h1>
+                              <h6 class="m-0 p-0 text-wrap">Retro</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                MJ's sixth signature shoe debuted during the 1990–1991 season at a championship
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- adidas section -->
+
+    <div id="adi" class="scrolldiv"></div>
+    <div class="container-fluid bg-black text-white" id="adidas" style="position:sticky!important; z-index:-1">
+        <div class="row justify-content-evenly flex-column flex-md-row p-4">
+
+            <div class="col-md-4 p-4 videoouter">
+                <div style="position:relative;" data-aos="slide-down">
+                    <div class="backdesvida">
+
+                    </div>
+                    <div class="m-0 p-0 bg-black videobox">
+                        <div class="m-0 p-0 cover"></div>
+                        <i class="bi bi-play-circle-fill playicon" onclick="playvideo('video/adidas.mp4',1)"></i>
+                        <img src="img/alogo.png" alt="" class="w-100 m-0 p-0 pic">
+                        <video autoplay class="w-100 h-100 m-0 p-0 vid"></video>
+                        <i class="bi bi-x-circle close" onclick="closevideo(1)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 p-4">
+                <div data-aos="zoom-in-left">
+                <h1 class="d-flex">Adidas <img src="img/adidas.png" alt="" class="img-fluid"
+                        style="height:20px; align-self:center; margin-left:15px"></h1>
+                <p>Impossible Is Nothing</p>
+            </div>
+                <hr>
+                <p class="pe-md-5" style="color:rgb(197, 197, 197)">
+                    BE SUPPORTED. BE YOU.<br>
+                    Reborn for a generation that refuses to play by the rules.<br>Welcome to a new era.
+                </p>
+                <a href="https://www.adidas.co.in/" target="_blank"><button class="btn btn-dark">Visit Site</button></a>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <!-- Top Picks from Adidas -->
+    <div id="tadi" class="scrolldiv"></div>
+    <div class="container-fluid " style="background: rgb(207, 207, 207);">
+        <div class=" row justify-content-evenly p-md-5 p-0">
+            <h2 class="col-12 text-center mb-md-5 p-5 p-md-0">
+            Top Picks From Adidas</h2>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topa1 col-md-12 col-5" data-aos="fade-down"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Yeezy Boost 700</h4>
+                    <h6 class="text-center m-0 d-none d-md-block text-wrap">MNVN Blue Tint</h6>
+                    <p class="p-3 text-center d-none d-md-block">The Adidas Yeezy Boost 700 MNVN released in 2021 in set of colors especially blue tint</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h1 class="m-0 p-0 text-wrap">Yeezy Boost 700</h1>
+                                <h6 class="m-0 p-0 text-wrap">MNVN Blue Tint</h6>
+                              </button>
+                              <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                  The Adidas Yeezy Boost 700 MNVN released in 2021 in set of colors especially blue tint
+                              </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0 flex-row-reverse">
+                    
+                <div class="top topa2 col-md-12 col-5" data-aos="fade-down"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Forum Low</h4>
+                    <h6 class="text-center m-0 d-none d-md-block text-wrap">X</h6>
+                    <h6 class="text-center m-0 d-none d-md-block text-wrap">Bad Bunny</h6>
+                    <p class="p-3 text-center d-none d-md-block">A twist on the original Forum Low hoops, Bad Bunny adds details like a buckle and toggle</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h1 class="m-0 p-0 text-wrap">Forum Low</h1>
+                                <h6 class="m-0 p-0 text-wrap">X</h6>
+                                <h6 class="m-0 p-0 text-wrap">Bad Bunny</h6>
+                              </button>
+                              <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                  A twist on the original Forum Low hoops, Bad Bunny adds details like a buckle and toggle</ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topa3 col-md-12 col-5" data-aos="fade-down"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                       
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Yeezy Boost</h4>
+                    <h6 class="text-center m-0 d-none d-md-block text-wrap">350 v2</h6>
+                    <p class="p-3 text-center d-none d-md-block">Features an upper composed of Primeknit. The monofilament side stripe is woven into the upper.</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h1 class="m-0 p-0 text-wrap">Yeezy Boost</h1>
+                                <h6 class="m-0 p-0 text-wrap">350 v2</h6>
+                              </button>
+                              <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                  Features an upper composed of Primeknit. The monofilament side stripe is woven into the upper.
+                              </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+   
+
+
+    <!-- puma section -->
+    <div id="pum" class="scrolldiv"></div>
+    <div class="container-fluid bg-black text-white" id="puma" style="position:sticky!important; z-index:-1">
+        <div class="row justify-content-evenly flex-column-reverse flex-md-row p-4">
+            <div class="col-md-5 p-4">
+                <div data-aos="zoom-in-up">
+                <h1 class="d-flex" >Puma <img src="img/puma.png" alt="" class="img-fluid"
+                        style="height:20px; align-self:center; margin-left:15px"></h1>
+                <p>Forever Faster</p>
+            </div>
+                <hr>
+                <p class="pe-md-5" style="color:rgb(197, 197, 197)">
+                    KEEP PUSHING FORWARD<br>
+                    The Fastest Sports Brand in the world.<br>Be brave. Be confident. Be determined. Be joyful.
+                </p>
+                <a href="https://in.puma.com/in/en" target="_blank"><button class="btn btn-dark">Visit Site</button></a>
+            </div>
+            
+            <div class="col-md-4 p-4 videoouter">
+                <div style="position:relative;" data-aos="slide-down">
+                    <div class="backdesvidn">
+
+                    </div>
+                    <div class="m-0 p-0 bg-black videobox">
+                        <div class="m-0 p-0 cover"></div>
+                        <i class="bi bi-play-circle-fill playicon" onclick="playvideo('video/puma.mp4',2)"></i>
+                        <img src="img/plogo.png" alt="" class="w-100 m-0 p-0 pic">
+                        <video autoplay class="w-100 h-100 m-0 p-0 vid"></video>
+                        <i class="bi bi-x-circle close" onclick="closevideo(2)"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Top Picks from Puma -->
+    <div id="tpum" class="scrolldiv"></div>
+    <div class="container-fluid " style="background: rgb(207, 207, 207);">
+        <div class=" row justify-content-evenly p-md-5 p-0">
+            <h2 class="col-12 text-center mb-md-5 p-5 p-md-0">
+            Top Picks From Puma</h2>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topp1 col-md-12 col-5" data-aos="zoom-in"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                        
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Puma</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">X</h6>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">RHUDE CELL</h6>
+                        <p class="p-3 text-center d-none d-md-block">Make way for the king. A mashup of two iconic retro silhouettes, infused with signature RHUDE aesthetic.</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Puma</h1>
+                              <h6 class="m-0 p-0 text-wrap">X</h6>
+                              <h6 class="m-0 p-0 text-wrap">Rhude Cell</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                Make way for the king. A mashup of two iconic retro silhouettes, infused with signature RHUDE aesthetic.
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0 flex-row-reverse">
+                    
+                    <div class="top topp2 col-md-12 col-5" data-aos="zoom-in"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                         
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Ferrari</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">Bao Kart</h6>
+                        <p class="p-3 text-center d-none d-md-block">The Bao Kart is designed for the next generation of F1 fans, with a slip-on silhouette that unites quick look</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Ferrari</h1>
+                              <h6 class="m-0 p-0 text-wrap">Bao Kart</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                The Bao Kart is designed for the next generation of F1 fans, with a slip-on silhouette that unites quick look</ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col-md-3 col-12 p-0 mb-5">
+            
+                <div class="row justify-content-evenly p-0 m-0">
+                    
+                <div class="top topp3 col-md-12 col-5" data-aos="zoom-in"></div>
+                    
+                    <div class="col-md-12 col-5 d-grid">
+                    
+                        <h4 class="text-center m-0 pt-md-3 p-0 d-none d-md-block text-wrap">Wild Rider</h4>
+                        <h6 class="text-center m-0 d-none d-md-block text-wrap">Grip LS</h6>
+                        <p class="p-3 text-center d-none d-md-block">The Wild Rider Grip's tech-forward design is inspired by the vibrant world of urban streets at night.</p>
+
+                        <div class="dropdown w-100 m-0 p-0 d-md-none align-self-center">
+                            <button class="btn dropdown-toggle w-100 m-0 p-0 shoedrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <h1 class="m-0 p-0 text-wrap">Wild Rider</h1>
+                              <h6 class="m-0 p-0 text-wrap">Grip LS</h6>
+                            </button>
+                            <ul class="dropdown-menu p-2 text-center w-100" style="font-size:0.5em; background: none; border:none">
+                                The Wild Rider Grip's tech-forward design is inspired by the vibrant world of urban streets at night.
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- trust -->
+    <div id="tru" class="scrolldiv"></div>
+    <div class="container-fluid" id="trust" style="position:sticky!important; z-index:-1">
+        <div class="row justify-content-evenly text-white" >
+            <div id="trustcover"></div>
+            <div id="namelogotrust" class="text-center">ShoeStock</div>
+                <div class="col-3 text-center" data-aos="flip-left">
+                <i class="bi bi-cart3" ></i>
+                <p>+320<br><strong>Offline Stores</strong></p>
+                </div>
+            
+                <div class="col-3 text-center" data-aos="flip-down">
+                    <i class="bi bi-award" ></i>
+                    <p>100%<br><strong>Authentic Sneakers</strong></p>
+                </div>
+            
+                <div class="col-3 text-center" data-aos="flip-right">
+                    <i class="bi bi-globe2" ></i>
+                    <p>+7200<br><strong>Daily Website Traffic</strong></p>
+                </div>
+        </div>
+    </div>
+
+<!-- offer -->
+<div id="off" class="scrolldiv"></div>
+    <div class="container-fluid" style="background: rgb(207, 207, 207);">
+        <div class="row justify-content-evenly flex-column flex-md-row pb-5">
+            <h2 class="col-12 p-5 text-center">Offers</h2>
+        
+        <div class="col-md-3 col-8 m-auto m-md-0 mb-5 text-center p-0">
+            <div class="card" style="width: 100%;box-shadow: 0px 0px 8px rgb(189, 189, 189)" data-aos="flip-up" data-aos-offset="200">
+                <img src="img/ab.png" class="card-img-top p-4" alt="..." style="background:rgb(230, 230, 230)">
+               
+                <div class="card-body">
+                  <h5 class="card-title">Adidas 4dfwd 2 Running</h5>
+                  <div class="card-text row justify-content-evenly mt-3">
+                    <div class="col-4 text-center text-danger d-grid align-items-center"><s>₹23999</s></div>
+                    <div class="col-4 text-success text-center">₹19999</div>
+                    <div class="col-4 text-danger text-center d-inline-grid align-items-center"><i class="bi bi-caret-down-fill"></i>16%</div>
+                  </div>
+                  <a href="https://www.adidas.co.in/adidas-4dfwd-2-running-shoes/GX9250.html" class="btn btn-dark btn-sm mt-3" target="_blank">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-md-3 col-8 m-auto m-md-0 mb-5 text-center p-0">
+            <div class="card" style="width: 100%;box-shadow: 0px 0px 8px rgb(189, 189, 189)" data-aos="flip-up" data-aos-offset="200">
+                <img src="img/nb.png" class="card-img-top p-4" alt="..." style="background:rgb(230, 230, 230)">
+               
+                <div class="card-body">
+                  <h5 class="card-title">Nike Revolution 6 FlyEase</h5>
+                  <div class="card-text row justify-content-evenly mt-3">
+                    <div class="col-4 text-center text-danger d-grid align-items-center"><s>₹4620</s></div>
+                    <div class="col-4 text-success text-center">₹3695</div>
+                    <div class="col-4 text-danger text-center d-inline-grid align-items-center"><i class="bi bi-caret-down-fill"></i>20%</div>
+                  </div>
+                  <a href="https://www.nike.com/in/t/revolution-6-flyease-next-nature-easy-on-off-road-running-shoes-XvR99K/DC8992-003" class="btn btn-dark btn-sm mt-3" target="_blank">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-md-3 col-8 m-auto m-md-0 mb-5 text-center p-0">
+            <div class="card" style="width: 100%;box-shadow: 0px 0px 8px rgb(189, 189, 189)" data-aos="flip-up" data-aos-offset="200">
+                <img src="img/pb.png" class="card-img-top p-4" alt="..." style="background:rgb(230, 230, 230)">
+               
+                <div class="card-body">
+                  <h5 class="card-title">Puma Scuderia Ferrari Neo Cat</h5>
+                  <div class="card-text row justify-content-evenly mt-3">
+                    <div class="col-4 text-center text-danger d-grid align-items-center"><s>₹8999</s></div>
+                    <div class="col-4 text-success text-center">₹4229</div>
+                    <div class="col-4 text-danger text-center d-inline-grid align-items-center"><i class="bi bi-caret-down-fill"></i>47%</div>
+                  </div>
+                  <a href="https://in.puma.com/in/en/pd/scuderia-ferrari-neo-cat-mid-top-motorsport-shoes/307195?swatch=01&size=0260" class="btn btn-dark btn-sm mt-3" target="_blank">Buy Now</a>
+                </div>
+              </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- footer -->
+<div id="abo" class="scrolldiv"></div>
+<div id="con" class="scrolldiv"></div>
+<div class="container-fluid">
+    <div class="row justify-content-evenly p-5 ps-md-0 pe-md-0 d-none d-md-flex contactmd text-light">
+        <div class="overlay"></div>
+        <div class="col-md-4 p-4 p-md-0 text-wrap" data-aos="slide-up">
+            
+            <h3 style="font-weight:bold">About Us</h3>
+            <hr>
+            <p class="mt-3 m-0"><span class="fs-3">S</span>hoe<span class="fs-3">S</span>tock, founded in 2018, is a leading sneaker reselling company offering exclusive sneakers from top brands. With a constantly updating inventory, we aim to provide a seamless shopping experience for sneaker enthusiasts.<br><span class="text-secondary">Shop now to get your hands on limited edition sneakers.</span>
+            </p>
+        </div>
+        
+        <div class="col-md-4 p-4 p-md-0 text-wrap" data-aos="slide-up">
+            
+            <h3 class="text-end" style="font-weight:bold">Contact Us</h3>
+            <hr>
+            <form action="https://formspree.io/f/xbjedqzv" method="POST" id="myform" onsubmit="return funform()">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control bg-dark text-white" name="Email" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" autocomplete="off" required style="border-radius:0; border:none">
+                    </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="Message" rows="1" class="form-control bg-dark text-white" autocomplete="off"
+                        required style="border-radius:0;border:none"></textarea>
+                </div>
+                <button type="reset" class="btn btn-danger"><i class="bi bi-arrow-repeat"></i></button>
+                <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill"></i></button>
+                <div class="social-icons float-end d-flex gap-1 mt-2">
+                    <a href="https://instagram.com/amrik0602" target="_blank"><img src="img/insta.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100023958442846" target="_blank"><img src="img/fb.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/amrik-singh-4197a9236" target="_blank"><img src="img/linkedin.png" alt="" ></a>
+                    <a href="https://wa.me/9876543210" target="_blank"><img src="img/whatsapp.png" alt="" ></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="accordion accordion-flush row d-md-none" id="accordionAbout">
+            
+        <div class="accordion-item p-0 m-0" >
+            
+          <h3 class="accordion-header p-0 m-0 " id="flush-headingOne">
+            <button class="accordion-button collapsed fw-bolder bg-black text-white m-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="box-shadow:none; ">
+              About Us
+            </button>
+          </h3>
+          <div id="flush-collapseOne" class="accordion-collapse collapse bg-black text-white m-0" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAbout" style="border-radius:0 !important">
+            <div class="accordion-body pt-0 m-0" ><p class="m-0 p-0 pt-2" style="border-top:1px solid rgb(109, 109, 109)"><span class="fs-3">S</span>hoe<span class="fs-3">S</span>tock, founded in 2018, is a leading sneaker reselling company offering exclusive sneakers from top brands. With a constantly updating inventory, we aim to provide a seamless shopping experience for sneaker enthusiasts.<br><span class="text-secondary">Shop now to get your hands on limited edition sneakers.</span></p></div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item p-0 m-0">
+            <h3 class="accordion-header p-0 m-0 " id="flush-headiTwo">
+              <button class="accordion-button collapsed fw-bolder bg-black text-white m-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="box-shadow:none; ">
+                Contact Us
+              </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse bg-black text-white m-0" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionAbout" style="border-radius:0 !important">
+              <div class="accordion-body pt-0 m-0" ><p class="m-0 p-0 pt-2" style="border-top:1px solid rgb(109, 109, 109)">
+                <form action="https://formspree.io/f/xbjedqzv" method="POST" id="myform" onsubmit="return funform()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control bg-dark text-white" name="Email" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" autocomplete="off" required style="border-radius:0; border:none">
+                        </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="Message" rows="1" class="form-control bg-dark text-white" autocomplete="off"
+                            required style="border-radius:0;border:none"></textarea>
+                    </div>
+                    <button type="reset" class="btn btn-danger"><i class="bi bi-arrow-repeat"></i></button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill"></i></button>
+                    <div class="social-icons float-end d-flex gap-1 mt-2">
+                        <a href="https://instagram.com/amrik0602" target="_blank"><img src="img/insta.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=100023958442846" target="_blank"><img src="img/fb.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/amrik-singh-4197a9236" target="_blank"><img src="img/linkedin.png" alt="" ></a>
+                        <a href="https://wa.me/9876543210" target="_blank"><img src="img/whatsapp.png" alt="" ></a>
+                    </div>
+                </form>    
+            </p>
+            </div>
+          </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="js.js"></script>
+
+    <script src="loading.js"></script>
+    <script src="search.js"></script>
+
+
+
+
+    <!-- aos -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            offset:150,
+            duration: 1000,
+        }
+      );
+    </script>
+
+
+
+
+
+
+    <!-- ********************************* -->
+
+</body>
+
+</html>
